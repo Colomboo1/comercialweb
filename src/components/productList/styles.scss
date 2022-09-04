@@ -1,0 +1,101 @@
+@import '../../assets/commons/vars.scss';
+
+
+
+.filtering{
+    .show{
+        transform: scale(1);
+        max-width: 25%;
+        max-height: 25%;
+        width: 50vw;
+    }
+    
+    .no-show {
+        transform: scale(0);
+        max-width: 0;
+        max-height: 0;
+        padding: 0;
+        
+    }
+}
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    
+    .product{
+        display: grid;
+    }
+
+    a{
+        max-width: 25%;
+        width: 25%;
+        padding: 55px 32px;
+        text-decoration: none;
+        color: $black-color;
+        text-decoration: none;
+        display: block;
+        transform: scale(1);
+        transition: all 0.5s ease-in;
+
+        .percentage{
+            background-color: $green-color;
+            position: absolute;
+            border-radius: 50%;
+            color: $light-color;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 20px;
+            min-width: 46px;
+            width: fit-content;
+            padding: 12px 5px 14px 5px;
+            text-align: center;
+        }
+    
+        .no-persentage{
+            margin-top: 25px;
+        }
+    
+        img{
+            max-width: 171px;
+            margin: 0 auto;
+        }
+
+        h3{
+            color: $black-color;
+            font-family: "Open Sans";
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: 22px;
+            text-align: center;
+            text-transform: capitalize;
+            transition: color 1s;
+        }
+        
+        h3:hover{
+            color: $green-color;
+        }
+        
+        .selling-price{
+            display: block;
+            color: $green-color;
+            font-family: "Open Sans";
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0;
+            line-height: 24px;
+            text-align: center;
+        }
+        
+        .list-price{
+            display: block;
+            text-decoration: line-through;
+            color: $grey-color;
+            font-family: "Open Sans";
+            font-size: 13px;
+            letter-spacing: 0;
+            line-height: 18px;
+            text-align: center;     
+        }
+    }
+}

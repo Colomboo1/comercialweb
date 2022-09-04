@@ -1,0 +1,119 @@
+@import '../../assets/commons/vars.scss';
+
+.header{
+    background-color: $light-color;
+    width: 100%;
+
+    .top-area{
+        display: flex;
+        
+        .logo{
+            width: 150px;
+            margin: 20px 40px;
+        }
+
+        .search-block{
+            display: block;
+            width: 100%;
+
+            .top-nav{
+                background-color: $white-color;
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 3px;
+                text-transform: capitalize;
+
+                a{
+                    color: $green-color;
+                    font-family: "Open Sans";
+                    font-size: 13px;
+                    letter-spacing: 0;
+                    line-height: 18px;
+                    text-align: center;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                }
+            }
+            
+            .search-cart{
+                display: flex;
+                align-items: center;
+                background-color: $white-color;
+
+                .search{
+                    display: flex;
+                    width: 100%;
+                    padding-left: 16px;
+                    align-items: center;
+
+                    .icon-icn_search{
+                        margin-right: 16px;
+                        font-size: 24px;
+                        height: 24px;
+                        line-height: 1;
+                    }
+
+                    input{
+                        border: 0px;
+                        width: 100%;
+                        color: $black-color;
+                        font-family: "Open Sans";
+                        font-size: 20px;
+                        font-weight: 300;
+                        letter-spacing: -0.5px;
+                        line-height: 27px;
+
+                        &:focus-visible{
+                            outline: none;
+                            box-shadow: 0 0 10px $green-color;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+                
+                a{
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    background-color: $black-color;
+                    color: $white-color;
+                    font-size: 15px;
+                    font-weight: 700;
+                    letter-spacing: 0;
+                    width: 256px;
+                    line-height: 20px;
+                    padding: 15px;
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+
+                    .icon-icn_cart{
+                        margin-right: 16px;
+                        font-size: 24px;
+                        height: 24px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }    
+    }
+
+    .main-menu{
+        display: flex;
+        width: 100%;
+        background-color: $cyan-color;
+        justify-content: space-around;   
+        text-transform: uppercase;
+        
+        a{
+            color: $white-color;
+            font-family: "Open Sans";
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 20px;
+            text-align: center;
+            padding: 18px 24px;
+            display: block;
+            text-decoration: none;
+        }
+    }
+}

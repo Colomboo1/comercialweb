@@ -1,0 +1,45 @@
+@import '../src/assets/commons/vars.scss';
+
+.app{
+    
+    h2{
+        display: block;
+        text-transform: capitalize;
+        margin-bottom: 49px;
+        color: $black-color;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: 49px;
+        text-align: center;
+
+        &.linea {
+            position: relative;
+            z-index: 1;
+            
+            span {
+                background: $white-color;
+                padding: 0 15px;
+              }
+        }
+
+        &.linea:before {
+            border-top: 2px solid $grey-color;
+            content: "";
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 95%;
+            z-index: -1;
+        }
+    }
+
+    .product-container{
+        display: flex;      
+    }
+}
+
+

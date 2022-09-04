@@ -1,0 +1,48 @@
+@import '../../assets/commons/vars.scss';
+
+
+.filter-box{
+    width: 35vh;
+    padding-left: 14px;
+
+    h3{
+        border-bottom: 2px solid $light-color;
+        text-transform: capitalize;
+        color: $black-color;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 24px;
+        padding-bottom: 14px;
+        margin-bottom: 31px;
+    }
+    
+    .checkboxes {
+        margin-bottom: 41px;
+        
+        label{
+            margin: 14px 14px;
+            display: block;
+            color: $black-color;
+            font-family: "Open Sans";
+            font-size: 15px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 20px;
+            position: relative;
+            cursor: pointer;
+
+            .checkbox{
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            .checkbox-icon{
+                color: $green-color;
+                transition: all .5s ease-in-out;
+                margin-right: 8px;
+            }
+        }
+    }
+}
