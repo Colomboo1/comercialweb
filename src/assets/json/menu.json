@@ -1,0 +1,26 @@
+{
+    "menu": {
+      "categories": [
+        {
+          "title": "ALMACÉN",
+          "href": "#almacen"
+        },
+        {
+          "title": "TELEVISORES",
+          "href": "#televisores"
+        },
+        {
+          "title": "CELULARES",
+          "href": "#celulares"
+        },
+        {
+          "title": "ZAPATILLAS",
+          "href": "#zapatillas"
+        },
+        {
+          "title": "COLCHONES",
+          "href": "#colchones"
+        }
+      ]
+    }
+  }
