@@ -17,7 +17,7 @@ function App() {
   const [filtrationItems, setFiltrationItems] = useState(filtration);
 
   useEffect(() => {
-      fetch("https://github.com/Colomboo1/comercialweb/blob/master/src/assets/json/body.json")
+      axios.get(' https://cors-anywhere.herokuapp.com/https://remote.fizzmod.com/body.json')
       .then(function (response) {
         setSlideItems(response.data.slides);
         setProductItems(response.data.products);
