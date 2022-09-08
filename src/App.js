@@ -15,8 +15,9 @@ function App() {
   const [productItems, setProductItems] = useState([]);
   const [filterItems, setFilterItems] = useState([]);
   const [filtrationItems, setFiltrationItems] = useState(filtration);
+
   useEffect(() => {
-      axios.get('https://comercialweb.vercel.app/src/assets/json/body.json')
+      axios.get('http://remote.fizzmod.com/body.json')
       .then(function (response) {
         setSlideItems(response.data.slides);
         setProductItems(response.data.products);
