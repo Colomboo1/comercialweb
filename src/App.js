@@ -16,7 +16,7 @@ function App() {
   const [filterItems, setFilterItems] = useState([]);
   const [filtrationItems, setFiltrationItems] = useState(filtration);
   useEffect(() => {
-      axios.get('https://comercialweb.vercel.app//src/assets/json/body.json')
+      axios.get('https://comercialweb.vercel.app/src/assets/json/body.json')
       .then(function (response) {
         setSlideItems(response.data.slides);
         setProductItems(response.data.products);
