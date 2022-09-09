@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./styles.scss";
 import facebook from '../../assets/images/facebook.png';
 import twitter from '../../assets/images/twitter.png';
@@ -25,7 +26,6 @@ const Footer = () => {
                 <img className="social" src={twitter}alt="twitter.png"></img>
                 <img className="social" src={youtube}alt="youtube.png"></img>   
             </div>
-            
         </footer>
     )
 }

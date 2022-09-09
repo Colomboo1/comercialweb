@@ -17,7 +17,7 @@ function App() {
   const [filtrationItems, setFiltrationItems] = useState(filtration);
 
   useEffect(() => {
-      axios.get('http://remote.fizzmod.com/body.json')
+      axios.get('/body.json')
       .then(function (response) {
         setSlideItems(response.data.slides);
         setProductItems(response.data.products);

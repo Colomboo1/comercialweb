@@ -9,7 +9,7 @@ const Header = () => {
     const [menu, setMenu] = useState(menuNuevo);
 
     useEffect(() => {
-        axios.get('http://remote.fizzmod.com/menu.json')
+        axios.get("/menu.json")
         .then(function (response) {
             setMenu(response.data.menu.categories)
         })
